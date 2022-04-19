@@ -129,8 +129,8 @@ func createPreview(imgSvc ImgService, fileCache FileCache,
 		height = 1080
 		options = append(options, img.WithMode(img.ResizeModeFit), img.WithQuality(img.QualityMedium))
 	case previewSize == PreviewSizeThumb:
-		width = 256
-		height = 256
+		width = 512
+		height = 512
 		options = append(options, img.WithMode(img.ResizeModeFill), img.WithQuality(img.QualityLow), img.WithFormat(img.FormatJpeg))
 	default:
 		return nil, img.ErrUnsupportedFormat
